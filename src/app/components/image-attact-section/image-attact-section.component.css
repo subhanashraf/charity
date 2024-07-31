@@ -1,0 +1,7 @@
+.backgroungattach{
+    background-image:  url('https://preview.colorlib.com/theme/charityworks/assets/img/gallery/section_bg01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}

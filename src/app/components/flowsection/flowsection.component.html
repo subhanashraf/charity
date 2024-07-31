@@ -1,0 +1,51 @@
+<section class="w-full h-full flex justify-evenly py-40 flex-wrap px-4">
+    <div class="w-72 sm:w-80 my-10  h-full addcsscontainer relative" (mouseenter)="mousehoverone()" (mouseleave)="mouseleaveone()">
+        <div class="w-full my-28 z-10">
+            <div class="mx-auto my-10 imagediv w-16 h-16 flex justify-center items-center rounded-full"
+                 [class.bg-white]="valueone" [class.bg-green-600]="!valueone" [class.hover:bg-white]="!valueone">
+                <i class="fa-solid fa-gear ima  " [ngClass]="valueone == true ? 'text-green-600': 'text-white ' " style="font-size: 2rem;"></i>
+            </div>
+            <div class="text-center tracking-widest leading-tight">
+                <a>
+                    <h1 class="my-7 text-3xl font-semibold heading" [ngClass]="valueone == true ? 'text-white': 'text-hinding ' ">Clean Water</h1>
+                </a>
+                <p class="text-textcolor tex" [ngClass]="valueone == true ? 'text-white': 'text-textcolor ' ">The sea freight service has grown considerably in recent years. We spend</p>
+    
+            </div>
+        </div>
+    </div>
+    <div class="w-72 sm:w-80 h-full my-10  addcsscontainer relative bg-cardbackgroung" >
+        <div class="w-full my-28 z-10">
+            <div class="mx-auto my-10 bg-white w-16 h-16 flex justify-center items-center rounded-full  ">
+                <i class="fa-solid fa-gear text-green-600  "  style="font-size: 2rem;"></i>
+            </div>
+            <div class="text-center tracking-widest leading-tight">
+                <a>
+                    <h1 class="my-7 text-3xl font-semibold heading text-white" >Clean Water</h1>
+                </a>
+                <p class="text-white" >The sea freight service has grown considerably in recent years. We spend</p>
+    
+            </div>
+        </div>
+    </div>
+    <div class="w-72 sm:w-80 h-full my-10 addcsscontainer relative" (mouseenter)="mousehoverthree()" (mouseleave)="mouseleavethree()">
+        <div class="w-full my-28 z-10">
+            <div class="mx-auto my-10 imagediv w-16 h-16 flex justify-center items-center rounded-full"
+                 [class.bg-white]="valuethree" [class.bg-green-600]="!valuethree" [class.hover:bg-white]="!valuethree">
+                <i class="fa-solid fa-gear ima  " [ngClass]="valuethree == true ? 'text-green-600': 'text-white ' " style="font-size: 2rem;"></i>
+            </div>
+            <div class="text-center tracking-widest leading-tight">
+                <a>
+                    <h1 class="my-7 text-3xl font-semibold heading" [ngClass]="valuethree == true ? 'text-white': 'text-hinding ' ">Clean Water</h1>
+                </a>
+                <p class="text-textcolor tex" [ngClass]="valuethree == true ? 'text-white': 'text-textcolor ' ">The sea freight service has grown considerably in recent years. We spend</p>
+    
+            </div>
+        </div>
+    </div>
+    
+     
+
+</section>
+
+    

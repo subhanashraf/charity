@@ -1,0 +1,23 @@
+
+.addcsscontainer::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #60c65e ;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin:bottom;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    
+}
+.addcsscontainer::before{
+    transform:scaleY(0);
+
+}
+.addcsscontainer:hover::before{
+    transform:scaleY(1);
+    
+}

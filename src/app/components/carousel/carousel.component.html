@@ -1,0 +1,24 @@
+<section>
+    <div class="carousel w-full max-w-4xl mx-auto my-60 relative overflow-hidden">
+        <div class="carousel-slide flex transition-transform duration-500 ease-in-out" #carouselSlide>
+          <div class="carousel-item flex-shrink-0 w-full" *ngFor="let slide of slides">
+            <div class="text-center gap-y-10  w-[80%] mx-auto  ">
+                <img class="mx-auto" src="https://preview.colorlib.com/theme/charityworks/assets/img/gallery/testimonial.png" alt="image not load">
+                <h1 class="text-3xl text-hinding tracking-wide font-bold">Margaret Lawson</h1>
+                <p class=" text-gray-500 my-4">Creative Director</p>
+                <p class="text-xl font-bold tracking-wider text-gray-500 leading-10">“I am at an age where I just want to be fit and healthy our bodies are our responsibility! So start caring for your body and it will care for you. ”</p>
+              </div>
+          </div>
+        </div>
+        <button (click)="prevSlide()" class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+        </button>
+        <button (click)="nextSlide()" class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+        </button>
+      </div>      
+</section> 

@@ -1,0 +1,16 @@
+<section class="w-full flex justify-evenly my-60 flex-wrap ">
+    @for (item of card; track $index) {
+     <div class="w-72 sm:w-80  my-10  ">
+         <img class="mx-auto w-full" src={{item.image}} alt="image is not load">
+        <div class="w-full p-4 sm:p-8">
+         <h1 class="text-2xl text-hinding font-bold tracking-wide leading-snug ">{{item.heading}}</h1>
+        </div>
+         <div class="w-64 sm:w-80 bg-gray-400 rounded-full dark:bg-gray-700 mt-4 ">
+           <div class="bg-green-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full" style="width: 45%;" >{{item.bar}}</div>
+         </div>
+     <div class="flex justify-between w-full px-6">
+         <h1>Raised: $20,000</h1>
+         <h1>Goal: $35,000</h1></div>
+     </div>
+    }
+ </section> 
